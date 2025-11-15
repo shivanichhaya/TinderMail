@@ -40,13 +40,6 @@ footer p{
     color:#145e42;
 }
 
-h3 {
-    color: #175873;
-    text-align: center;
-    font-size: 40px;
-    font-style: italic;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
 .name {
     position: relative;
@@ -237,26 +230,6 @@ ul.nav-bar a:hover {
 
 .message-button:hover {
     background-color: #145e42;
-}
-
-.green-bg{
-    position:relative;
-    width:100%;
-    overflow:hidden;
-    display:inline-block;
-    margin:0;
-    padding:0;
-}
-.green-bg img{
-    position:relative;
-    display:block;
-    width:100%;
-    margin-left:0px;
-    padding-top:37rem;
-    opacity:75%;
-    width:100%;
-    z-index:-1;
-    object-fit:cover;
 }
 
 #home{
