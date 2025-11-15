@@ -5,10 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
+        {
             "type": "chrome",
             "request": "launch",
-            "name": "Open main.html",
-            "file": "c:\\Users\\schha\\TinderMail\\screens\\main.html"
+            "name": "Open home.html",
+            "file": "c:\\Users\\schha\\TinderMail\\screens\\home.html"
         }
     ]
 }
