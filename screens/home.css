@@ -8,7 +8,7 @@ html, body{
 body {
     /* background-color: #ebe1e1; */
     height:100%;
-    background: linear-gradient(to bottom, pink, white);
+    background: linear-gradient(to bottom, pink 60%, white 100%);
     background-repeat: no;
     margin: 0;
     padding: 0;
@@ -38,17 +38,6 @@ footer p{
     margin:0;
     font-family:"Concert One";
     color:#145e42;
-}
-
-.image-link{
-    display:inline;
-    height:324px;
-    width:324px;
-}
-.image-link img{
-    display:block;
-    height:100%;
-    width:100%;
 }
 
 h3 {
@@ -88,14 +77,6 @@ h3 {
     }
 }
 
-.slogan {
-    position: relative;
-    text-align: center;
-    font-size: 30px;
-    font-family: "Concert One";
-    font-weight: 20;
-    color: black;
-}
 
 #rectangle {
     position: absolute;
@@ -108,19 +89,6 @@ h3 {
     left: 65%;
     transform: translateX(-50%);
     opacity: 40%;
-}
-
-#purpose {
-    position: absolute;
-    font-size: 40px;
-    width: 90%;
-    max-width: 800px;
-    left: 65%;
-    top: 30rem;
-    transform: translateX(-50%);
-    font-family: "Concert One";
-    text-align: center;
-    color: #177356;
 }
 
 #info {
@@ -388,15 +356,6 @@ ul.nav-bar a:hover {
 
 }
 
-.healthy-shampoos {
-    /* max-width: 900px; */
-    width:105%;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ebe1e1;
-    border-radius: 10px;
-    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-}
 
 .row {
     display: flex;
@@ -437,13 +396,70 @@ ul.nav-bar a:hover {
     color:#d35cc9;
     padding-bottom:50px;
 }
+/* FLASHCARD */
 
-.text p {
-    margin: 5px 0 0;
-    font-size: 1.25em;
-    color: #000000;
-    font-family:"Concert One";
-    text-align:center;
-    line-height:2;
+.container {
+    text-align: center;
+}
+
+.flashcard {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+.flashcard:hover {
+    background-color: #f9f9f9;
+    transform: scale(1.05);
+}
+
+#card-content {
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.add-card-form {
+    margin-top: 20px;
+}
+
+.add-card-form input {
+    padding: 8px;
+    margin: 5px;
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-card-form button {
+    padding: 8px 20px;
 }
 

@@ -1,0 +1,188 @@
+html, body{
+    height:100%;
+}
+
+body {
+    /* background-color: #ebe1e1; */
+    height:100%;
+    background: linear-gradient(to bottom, pink 60%, white 100%);
+    background-repeat:no-repeat;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    padding-top:2%;
+    padding-bottom: 10%;
+}
+
+
+
+#headers {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    margin-left: 50px;
+    padding: 100px;
+}
+
+@keyframes rotateBackForth {
+    0%, 100% {
+        transform: rotate(0deg); /* Starting and ending point */
+    }
+    25% {
+        transform: rotate(-3deg); /* Rotate to the left */
+    }
+    50% {
+        transform: rotate(0deg); /* Back to center */
+    }
+    75% {
+        transform: rotate(3deg); /* Rotate to the right */
+    }
+}
+/* NAV BAR*/
+
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+    overflow-x:hidden;
+
+}
+ul {
+    z-index: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #a44266;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+li {
+    z-index: 0;
+    float: right;
+    padding: 15px;
+    font-size: 28px;
+    background-color: #a44266;
+    font-family: "Concert One";
+}
+
+.homebutton {
+    position: fixed;
+    left: 0;
+    top: -.5vw;
+    padding: 15px;
+    font-size: 25px;
+    font-family: "Concert One";
+    color: #e8c0cf;
+}
+
+.homebutton:hover {
+}
+
+li a {
+    display: flex;
+    color: #e8c0cf;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.nav-bar a:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    color: #24033a;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+/* FLASHCARD */
+
+.container {
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom:5%;
+    justify-content: center;
+}
+
+.flashcard {
+    width: 400px;
+    height: 500px;
+    border: 2px solid #a44266;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-bottom: 20px;
+    margin: auto;
+}
+
+/* .flashcard:hover {
+    background-color: #f9f9f9;
+    transform: scale(1.05);
+} */
+
+#card-content {
+    font-size: 1.2em;
+    padding: 20px;
+}
+
+.buttons {
+     margin-top: 10px;
+    padding: 0 50px; /* optional padding */
+    display: flex;                /* make it flex container */
+    justify-content: space-between; /* push buttons to ends */
+    max-width: 400px;             /* match flashcard width */
+    margin-left: auto;
+    margin-right: auto; 
+}
+#prev-btn{
+    background-color: #a44266;
+    width: 100px;
+    height: 100px;
+}
+
+#next-btn{
+    background-color: #a44266;
+    width: 100px;
+    height: 100px;
+}
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: #333;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
